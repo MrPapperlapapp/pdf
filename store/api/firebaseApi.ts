@@ -38,7 +38,6 @@ export const firebaseApi = createApi({
           return { error: (error as Error).message };
         }
       },
-      invalidatesTags: ['Auth'],
     }),
 
     logout: builder.mutation<void, void>({

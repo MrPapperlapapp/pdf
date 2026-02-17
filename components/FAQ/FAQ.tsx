@@ -54,7 +54,7 @@ export function FAQ() {
         </Title>
 
         <Text size="sm" c="dimmed" ta="center" mb="xl">
-          {'Your data is protected with enterprise-grade security '}
+          {'Your data is Protected with enterprise-grade security '}
           <Text
             component="span"
             size="sm"
