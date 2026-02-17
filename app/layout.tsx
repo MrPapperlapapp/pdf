@@ -1,20 +1,32 @@
-import "@mantine/core/styles.css";
-import React from "react";
-import {
-  MantineProvider,
-  ColorSchemeScript,
-  mantineHtmlProps,
-} from "@mantine/core";
-import { theme } from "../theme";
+import '@mantine/core/styles.css';
+import './globals.css';
+import React from 'react';
+import { MantineProvider, ColorSchemeScript, createTheme } from '@mantine/core';
+import { Providers } from '@/components/Providers';
+
+const theme = createTheme({
+  primaryColor: 'red',
+  fontFamily:
+    'Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif',
+  headings: {
+    fontFamily:
+      'Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif',
+  },
+});
 
 export const metadata = {
-  title: "Mantine Next.js template",
-  description: "I am using Mantine with Next.js!",
+  title: 'pdf.net - Professional All-In-One Online PDF Editor',
+  description:
+    'Effortlessly upload your PDF files to securely sign, edit, annotate, merge, and do much more with them using our online PDF editor.',
 };
 
-export default function RootLayout({ children }: { children: any }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="en" {...mantineHtmlProps}>
+    <html lang="en" suppressHydrationWarning>
       <head>
         <ColorSchemeScript />
         <link rel="shortcut icon" href="/favicon.svg" />
@@ -24,7 +36,9 @@ export default function RootLayout({ children }: { children: any }) {
         />
       </head>
       <body>
-        <MantineProvider theme={theme}>{children}</MantineProvider>
+        <Providers>
+          <MantineProvider theme={theme}>{children}</MantineProvider>
+        </Providers>
       </body>
     </html>
   );

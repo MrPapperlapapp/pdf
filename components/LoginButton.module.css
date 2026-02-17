@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.userInfo {
+  font-size: 14px;
+  color: var(--mantine-color-gray-7);
+}

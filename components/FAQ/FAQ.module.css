@@ -1,0 +1,64 @@
+.section {
+  padding: 80px 0;
+  background: white;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #1a1a2e;
+  margin-bottom: 16px;
+}
+
+.item {
+  background: #fafafa;
+  border: 1px solid #f0f0f0;
+  transition: background 0.15s ease;
+}
+
+.item[data-active] {
+  background: #f8f9fa;
+  border-color: #e9ecef;
+}
+
+.control {
+  padding: 18px 20px;
+}
+
+.label {
+  font-weight: 600;
+  font-size: 15px;
+  color: #1a1a2e;
+}
+
+.panel {
+  padding: 0 20px 18px;
+}
+
+.chevron {
+  color: #868e96;
+}
+
+@media (max-width: 36em) {
+  .section {
+    padding: 48px 0;
+  }
+
+  .sectionTitle {
+    font-size: 26px;
+  }
+
+  .control {
+    padding: 14px 16px;
+  }
+
+  .label {
+    font-size: 14px;
+  }
+
+  .panel {
+    padding: 0 16px 14px;
+  }
+}

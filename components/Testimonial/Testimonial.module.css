@@ -1,0 +1,27 @@
+.section {
+  padding: 60px 0;
+  background: white;
+}
+
+.quote {
+  text-align: center;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 1.7;
+  color: #495057;
+  max-width: 560px;
+}
+
+.name {
+  color: #1a1a2e;
+}
+
+@media (max-width: 36em) {
+  .section {
+    padding: 40px 0;
+  }
+
+  .quote {
+    font-size: 16px;
+  }
+}

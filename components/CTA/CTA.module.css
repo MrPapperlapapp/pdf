@@ -1,0 +1,28 @@
+.section {
+  padding: 80px 0;
+  background: #1a1a2e;
+}
+
+.title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: white;
+}
+
+.ctaBtn {
+  font-weight: 600;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+@media (max-width: 36em) {
+  .section {
+    padding: 48px 0;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+}

@@ -1,0 +1,303 @@
+.hero {
+  padding: 60px 0 80px;
+  overflow: hidden;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.content {
+  max-width: 560px;
+}
+
+.title {
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: #1a1a2e;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  background: linear-gradient(135deg, #e03131, #c92a2a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.description {
+  font-size: 17px;
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 32px;
+  max-width: 460px;
+}
+
+.dropzone {
+  border: 2px dashed var(--mantine-color-gray-4);
+  border-radius: 16px;
+  padding: 24px 28px;
+  margin-bottom: 32px;
+  background: var(--mantine-color-gray-0);
+  transition: all 0.2s ease;
+
+  &:hover {
+    border-color: var(--mantine-color-red-5);
+    background: var(--mantine-color-red-0);
+  }
+
+  &[data-accept] {
+    border-color: var(--mantine-color-red-6);
+    background: var(--mantine-color-red-0);
+  }
+
+  &[data-reject] {
+    border-color: var(--mantine-color-red-6);
+    background: var(--mantine-color-red-0);
+  }
+}
+
+.testimonial {
+  max-width: 400px;
+}
+
+.quoteBox {
+  position: relative;
+  padding-left: 8px;
+}
+
+.quoteIcon {
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  opacity: 0.4;
+}
+
+.quoteText {
+  font-style: italic;
+  line-height: 1.6;
+  padding-left: 24px;
+}
+
+.illustration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.illustrationInner {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  aspect-ratio: 1;
+}
+
+.floatingDoc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  background: white;
+  border-radius: 12px;
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.08),
+    0 4px 16px rgba(0, 0, 0, 0.04);
+  padding: 24px 20px;
+  z-index: 2;
+}
+
+.docPreview {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.docLine {
+  height: 8px;
+  background: #f1f3f5;
+  border-radius: 4px;
+}
+
+.decorCircle1 {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff3f3;
+  z-index: 1;
+}
+
+.decorCircle2 {
+  position: absolute;
+  bottom: 15%;
+  left: 5%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #e8f5e9;
+  z-index: 1;
+}
+
+.decorDot1 {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #e03131;
+  z-index: 3;
+}
+
+.decorDot2 {
+  position: absolute;
+  bottom: 25%;
+  right: 20%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #fab005;
+  z-index: 3;
+}
+
+.decorDot3 {
+  position: absolute;
+  top: 40%;
+  right: 5%;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #339af0;
+  z-index: 3;
+}
+
+.editBadge {
+  position: absolute;
+  top: 25%;
+  right: 15%;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  z-index: 4;
+}
+
+.signBadge {
+  position: absolute;
+  bottom: 30%;
+  left: 10%;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  z-index: 4;
+}
+
+@media (max-width: 75em) {
+  .title {
+    font-size: 44px;
+  }
+
+  .grid {
+    gap: 40px;
+  }
+
+  .illustrationInner {
+    max-width: 360px;
+  }
+}
+
+@media (max-width: 62em) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 38px;
+  }
+
+  .description {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .dropzone {
+    justify-content: center;
+  }
+
+  .testimonial {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .illustration {
+    order: -1;
+  }
+
+  .illustrationInner {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 48em) {
+  .hero {
+    padding: 40px 0 56px;
+  }
+
+  .title {
+    font-size: 34px;
+  }
+
+  .description {
+    font-size: 15px;
+    margin-bottom: 24px;
+  }
+
+  .dropzone {
+    padding: 20px 24px;
+  }
+}
+
+@media (max-width: 36em) {
+  .hero {
+    padding: 32px 0 48px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+
+  .dropzone {
+    padding: 16px 20px;
+  }
+
+  .illustrationInner {
+    max-width: 240px;
+  }
+}

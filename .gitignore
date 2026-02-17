@@ -71,6 +71,7 @@ web_modules/
 
 # Yarn Integrity file
 .yarn-integrity
+.yarn
 
 # dotenv environment variable files
 .env
@@ -87,6 +88,7 @@ web_modules/
 .next
 out
 
+.idea
 # Nuxt.js build / generate output
 .nuxt
 dist
