@@ -1,0 +1,137 @@
+/* Page wrapper with gray background matching Hero component */
+.wrapper {
+  min-height: 100vh;
+  background: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 0 24px;
+}
+
+/* Container for centering content */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+}
+
+/* Logo styling */
+.logo {
+  flex-shrink: 0;
+}
+
+/* Brand text - using dark color from Hero */
+.brand {
+  color: #1a1a2e;
+  letter-spacing: -0.02em;
+}
+
+/* Card styling - white background like floatingDoc */
+.card {
+  background: white;
+  border: 1px solid #e9ecef;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+  width: 100%;
+  max-width: 420px;
+}
+
+/* Title styling - using dark color */
+.title {
+  color: #1a1a2e;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* Social button (Google) */
+.socialButton {
+  border: 1px solid #dee2e6;
+  background: white;
+  font-weight: 500;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: #f8f9fa;
+    border-color: #adb5bd;
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+}
+
+/* Primary login button - using red from Hero */
+.loginButton {
+  background: linear-gradient(135deg, #e03131, #c92a2a);
+  font-weight: 600;
+  transition: all 0.2s ease;
+
+  &:hover:not(:disabled) {
+    background: linear-gradient(135deg, #c92a2a, #b02525);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(224, 49, 49, 0.3);
+  }
+
+  &:active:not(:disabled) {
+    transform: translateY(0);
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
+
+/* Link styling */
+.link {
+  font-weight: 500;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+/* Footer styling */
+.footer {
+  margin-top: auto;
+  padding-top: 48px;
+}
+
+.footerLinks {
+  flex-wrap: wrap;
+}
+
+.footerLink {
+  transition: color 0.2s;
+  text-decoration: none;
+
+  &:hover {
+    color: #495057 !important;
+    text-decoration: underline;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 48em) {
+  .wrapper {
+    padding: 24px 16px 16px;
+  }
+
+  .card {
+    padding: 24px !important;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 36em) {
+  .card {
+    box-shadow: none;
+    border: none;
+    background: transparent;
+  }
+}
