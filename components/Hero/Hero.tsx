@@ -1,15 +1,6 @@
 'use client';
 
-import {
-  Container,
-  Title,
-  Text,
-  Button,
-  Group,
-  Box,
-  Stack,
-  Avatar,
-} from '@mantine/core';
+import { Container, Title, Text, Group, Avatar } from '@mantine/core';
 import { Dropzone } from '@mantine/dropzone';
 import {
   IconUpload,

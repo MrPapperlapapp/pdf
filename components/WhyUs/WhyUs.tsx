@@ -6,7 +6,6 @@ import {
   Text,
   SimpleGrid,
   Box,
-  Stack,
   Group,
   ThemeIcon,
 } from '@mantine/core';

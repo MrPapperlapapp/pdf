@@ -1,15 +1,6 @@
 'use client';
 
-import {
-  Container,
-  Title,
-  Accordion,
-  Text,
-  Button,
-  Group,
-  Box,
-} from '@mantine/core';
-import { IconArrowRight } from '@tabler/icons-react';
+import { Container, Title, Accordion, Text } from '@mantine/core';
 import classes from './FAQ.module.css';
 
 const faqItems = [
