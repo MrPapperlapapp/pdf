@@ -1,6 +1,6 @@
 'use client';
 
-import { Container, Text, Avatar, Group, Stack, Box } from '@mantine/core';
+import { Container, Text, Avatar, Group, Stack } from '@mantine/core';
 import classes from './Testimonial.module.css';
 
 export function Testimonial() {

@@ -8,20 +8,23 @@ import { TrustSection } from '@/components/TrustSection/TrustSection';
 import { FAQ } from '@/components/FAQ/FAQ';
 import { CTA } from '@/components/CTA/CTA';
 import { Footer } from '@/components/Footer/Footer';
+import Public from '@/components/Public/Public';
 
 export default function Home() {
   return (
-    <main>
-      <Header />
-      <Hero />
-      <Features />
-      <Testimonial />
-      <Steps />
-      <WhyUs />
-      <TrustSection />
-      <FAQ />
-      <CTA />
-      <Footer />
-    </main>
+    <Public>
+      <main>
+        <Header />
+        <Hero />
+        <Features />
+        <Testimonial />
+        <Steps />
+        <WhyUs />
+        <TrustSection />
+        <FAQ />
+        <CTA />
+        <Footer />
+      </main>
+    </Public>
   );
 }

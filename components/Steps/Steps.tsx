@@ -5,7 +5,6 @@ import {
   Title,
   Text,
   SimpleGrid,
-  Box,
   Stack,
   ThemeIcon,
 } from '@mantine/core';

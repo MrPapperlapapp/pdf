@@ -1,15 +1,6 @@
 'use client';
 
-import {
-  Container,
-  Title,
-  Accordion,
-  Text,
-  Button,
-  Group,
-  Box,
-} from '@mantine/core';
-import { IconArrowRight } from '@tabler/icons-react';
+import { Container, Title, Accordion, Text } from '@mantine/core';
 import classes from './FAQ.module.css';
 
 const faqItems = [
@@ -54,7 +45,7 @@ export function FAQ() {
         </Title>
 
         <Text size="sm" c="dimmed" ta="center" mb="xl">
-          {'Your data is protected with enterprise-grade security '}
+          {'Your data is Protected with enterprise-grade security '}
           <Text
             component="span"
             size="sm"

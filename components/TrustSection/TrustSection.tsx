@@ -6,7 +6,6 @@ import {
   Text,
   SimpleGrid,
   Box,
-  Stack,
   Group,
   Avatar,
 } from '@mantine/core';

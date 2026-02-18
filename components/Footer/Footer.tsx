@@ -1,6 +1,6 @@
 'use client';
 
-import { Container, Group, Text, Stack, Anchor, Divider } from '@mantine/core';
+import { Container, Group, Text, Anchor, Divider } from '@mantine/core';
 import {
   IconBrandTwitter,
   IconBrandFacebook,
